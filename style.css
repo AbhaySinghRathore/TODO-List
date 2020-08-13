@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgb(155, 237, 240),rgb(190, 210, 236));
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: rgb(49, 95, 223);
+}
+form{
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    background-color: white;
+    width: 600px;
+    color: rgb(49, 95, 223);
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+}
+form button{
+    background-color: white;
+    color:rgb(49, 95, 223);
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background-color: rgb(49, 95, 223);
+    color: white;
+}
+
+.todo-container{
+    margin-top: 40px;
+}
+.todo-list{
+    list-style: none;
+}
+.todo{
+    margin-bottom: 20px;
+    margin-right: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.addedInput{
+    background-color: white;
+    width: 555px;
+    color: rgb(49, 95, 223);
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+}
+
+.check-btn{
+    background-color: white;
+    color:rgb(49, 95, 223);
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.check-btn:hover{
+    background-color: rgb(49, 95, 223);
+    color: white;
+}
+.delete-btn{
+    background-color: white;
+    color:rgb(49, 95, 223);
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    background-color: rgb(49, 95, 223);
+    color: white;
+}
+
+.fa-check-square,.fa-trash{
+    pointer-events: none;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+select{
+    color:rgb(49, 95, 223);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 16px;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background:rgb(49, 95, 223);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after{
+    background: white;
+    color: rgb(49, 95, 223);
+}
+
+option{
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+}
